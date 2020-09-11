@@ -1,25 +1,7 @@
-.texto3{
-  color: rgb(0, 0, 0);
-  text-align: left;
-  margin-top: 10px;
-  padding: 10px;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.cont_contadores{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-  width: 600px;
-  height: 460px;
-}
-
 .cont_contador{
   display: flex;
   padding: 5px;
+  margin-top: 15px;
   width: 500px;
   height: 30px;
   border-radius: 12px;

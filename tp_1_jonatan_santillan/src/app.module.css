@@ -14,12 +14,31 @@
 
 .contenedor{
   display: flex;
-  align-items: space-;
-  margin: 10px;
-  padding: 10px;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 150px;
   width: 1000px;
   height: 500px;
   background-color: rgb(192, 192, 192);
+}
+
+.texto3{
+  color: rgb(0, 0, 0);
+  text-align: left;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.cont_contadores{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  width: 600px;
+  height: 460px;
 }
 
 .cont_boton{
