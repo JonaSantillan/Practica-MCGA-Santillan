@@ -9,7 +9,7 @@ class Contador extends React.Component {
             <div className={Css.cont_contador}>
                 <div>
                     <div className={Css.datos}>Creado: {this.props.fecha}</div>
-                    <div className={Css.datos}>Actualizado:</div>
+                    <div className={Css.datos}>Actualizado: {this.props.fechaactual}</div>
                 </div>
                 <div className={Css.cont_contador2}>
                     <button className={Css.botonmasmenos} onClick={(props) => {

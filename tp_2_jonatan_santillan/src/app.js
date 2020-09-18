@@ -8,7 +8,8 @@ class App extends React.Component {
   state = {
     numero : 0,
     data : [],
-    fecha : Date()
+    fecha : Date(),
+    fechaactual : Date()
   }
 
   agregar_cont = () => {
@@ -20,6 +21,13 @@ class App extends React.Component {
           data : newdata,
           fecha : newfecha
       })
+  }
+
+  editar_info = () => {
+    document.getElementById("info-btn").innerHTML="Guardar Información"
+
+    
+
   }
 
   eliminar_cont = (index) => {
@@ -43,7 +51,8 @@ class App extends React.Component {
       return item
     })
     this.setState({
-      data : newlista
+      data : newlista,
+      fechaactual : Date()
     })
   }
 
@@ -55,7 +64,8 @@ class App extends React.Component {
       return item
     })
     this.setState({
-      data : newlista
+      data : newlista,
+      fechaactual : Date()
     })
   }
   
@@ -70,21 +80,22 @@ class App extends React.Component {
                 
           <div className={Css.cont_boton}>
               <div className={Css.texto}>Alumno</div>
-              <div className={Css.texto2}>Jonatan Santillan</div>
-              <div className={Css.texto2}>2020</div>
-              <button className={Css.boton2} onClick={this.editar_info}>Editar Información</button>
+              <div id="cambio-nombre" className={Css.texto2}>Jonatan Santillan</div>
+              <div id="cambio-age" className={Css.texto2}>2020</div>
+              <button id="info-btn" className={Css.boton2} onClick={this.editar_info}>Editar Información</button>
               <button className={Css.boton} onClick={this.agregar_cont}>Agregar Contador</button>
           </div>
           
           <div className={Css.cont_contadores}>
             <div className={Css.texto3}>Lista de Contadores</div>
-              {this.state.data.map ((item, index, fecha) =>{
+              {this.state.data.map ((item, index) =>{
                 return(
                   <Contador 
                     key = {index}
                     index = {index}
                     numero = {item}
-                    fecha = {fecha}
+                    fecha = {this.state.fecha}
+                    fechaactual = {this.state.fechaactual}
                     eliminar = {this.eliminar_cont}
                     sumar = {this.sumar}
                     restar = {this.restar}
