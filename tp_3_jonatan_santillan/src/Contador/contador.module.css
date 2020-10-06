@@ -1,0 +1,68 @@
+.cont_contador{
+    display: flex;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 400px;
+    width: 500px;
+    height: 120px;
+    border-radius: 12px;
+    border-style: groove;
+    border-width: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .datos{
+    display: flex;
+    margin: 0px auto;
+    width: 650px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+
+  .cont_contador2{
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 500px;
+    height: 30px;
+    margin-top: 80px;
+  }
+
+  
+  .botonmasmenos{
+    border-radius: 5px;
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #00aa17;
+    background:rgb(255, 255, 255);
+    border: 2px solid;
+    border-color: #00aa17;
+    margin: 0px auto;
+  }
+  
+  .numero{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    margin: 0px auto;
+  }
+  
+  .botoneliminar{
+    font-size: 18px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    box-shadow: currentColor; 
+    color: #00aa17;
+    background:rgb(255, 255, 255);
+    border: 2px solid;
+    border-color: #00aa17;
+    margin: 0px auto;
+  }
