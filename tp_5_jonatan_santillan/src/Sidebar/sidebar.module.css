@@ -1,0 +1,55 @@
+.cont_boton{
+    display: flex;
+    flex-direction: column;
+    align-items: space-;
+    margin: 10px;
+    margin-left: 500px;
+    padding: 10px;
+    padding-bottom: 20px;
+    width: 400px;
+    height: 600px;
+    border-radius: 12px;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .texto{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  .texto2{
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .boton{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 18px;
+    width: 400px;
+    background-color: rgb(81, 218, 81);
+    border-color: #000000;
+    font-weight: bold;
+  }
+  
+  .boton2{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border-color: #000000;
+    font-weight: bold;
+  }
+
+  .input{
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
