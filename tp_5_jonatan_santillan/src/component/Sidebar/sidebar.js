@@ -3,6 +3,8 @@ import Css from "./sidebar.module.css"
 import {
     Link
   } from "react-router-dom";
+  import Formulario from '../formulario/index';
+import Sidebar from '../Sidebar/index'
 
 class sidebar extends React.Component {
 
@@ -31,10 +33,11 @@ class sidebar extends React.Component {
         })
     }
 
+
     render = () => {
         return(                
             <div className={Css.cont_boton}>
-                <div className={Css.texto}>Trabajo Práctico N°5</div>
+                <div className={Css.texto}>Alumno</div>
                 {this.state.editar
                     ?
                     (
@@ -70,24 +73,20 @@ class sidebar extends React.Component {
                 >
                     {this.state.editar ? "Guardar Información" : "Editar Información"}
                 </button>
-
                 <Link to="/usuarios">
                     <button 
                         className={Css.boton} 
                     >
-                    Usuarios
+                    Lista de Usuarios
                     </button>
-                </Link>   
-
+                </Link>  
                 <Link to="/formulario">
                     <button 
                         className={Css.boton} 
-                        //onClick={this.agregar_cont}
                     >
-                    Formulario
+                    Agregar Usuario
                     </button>
-                </Link>       
-
+                </Link>                 
             </div>
             
         )
